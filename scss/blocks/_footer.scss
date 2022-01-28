@@ -1,0 +1,177 @@
+.footer{
+  background-color: #F3F3F3;
+}
+
+.footer__elements{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-left: 185px;
+  padding-top: 61px;
+  margin-bottom: 25px;
+  
+}
+
+.footer__img{
+  position: absolute; 
+  z-index: 2;
+  top: calc(50% + -20px);
+  left: calc(50% + -765px);
+}
+
+.footer__list{
+  display: flex;
+  justify-content: space-between;
+  width: 288px;
+  margin: 0;
+  margin-right: 157px;
+  padding: 0;
+  list-style: none;
+
+
+  &:hover{
+    color: #FFBD54;
+  }
+
+  &:active{
+    opacity: 0.7;
+  }
+}
+
+.footer__sublist{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__sublink{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  text-decoration: none;
+
+  
+  &:hover{
+    color: #FFBD54;
+  }
+
+  &:active{
+    opacity: 0.7;
+  }
+}
+
+.footer__subitem{
+  margin-bottom: 14px;
+}
+
+.footer__suplist{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: 137px;
+  padding: 0;
+  list-style: none;
+  
+  &::before{
+    
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top:3px;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/calendar.svg");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    
+  }
+}
+
+.footer__supitem{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 3px;
+  
+  color: #333333;
+}
+
+.footer__tel-list{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  &::before{
+    
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    left: -23px;
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/phone.svg");
+    background-size: 13px;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer__tel{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  color: #333333;
+  
+  &:hover{
+    color: #FFBD54;
+  }
+  
+  &:active{
+    color:#333333;
+    opacity: 0.6;
+  }
+}
+
+.footer__adress{
+  position: relative;
+  z-index: 1;
+  margin-right: 128px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  align-items: center; 
+  color: #333333;
+  
+  &::before{
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: -25px;
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/house.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.footer__copyright{
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #5C5C5C;
+}

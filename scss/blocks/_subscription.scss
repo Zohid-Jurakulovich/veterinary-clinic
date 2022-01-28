@@ -1,0 +1,47 @@
+.subscription{
+  margin-bottom: 151px;
+  padding: 198px 0 165px;
+  background-image: url(../../images/subscription-bgi.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscription__box{
+  margin-top: 30px ;
+  margin-left: 200px
+}
+
+.subscription__heading{
+  width: 494px;
+}
+
+.subscription__title{
+  margin: 0;
+  margin-bottom:32px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.subscription__form{
+  display: flex;
+  align-items: center;
+}
+
+.subscription__input{
+  padding: 18px 147px 12px 22px;
+  border: none;
+  margin-right: 21px;
+  
+  &::placeholder{
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+  }
+}
+
+.subscription__button{
+  padding: 15px 53px 14px 51px;
+  border: none;
+}

@@ -1,0 +1,258 @@
+.header-top{
+  display: flex;
+}
+.box{
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  margin-left: auto;
+}
+
+.header-top__adress{
+  position: relative;
+  z-index: 1;
+  margin-right: 128px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 18px;
+  align-items: center; 
+  color: #333333;
+  
+  &::before{
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 3px;
+    left: -25px;
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/house.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.header-top__list{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-right: 139px;
+  padding: 0;
+  list-style: none;
+  
+  &::before{
+    
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    left: -23px;
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/phone.svg");
+    background-size: 13px;
+    background-repeat: no-repeat;
+  }
+}
+
+.header-top__item:nth-child(2){
+  
+  margin: 0 22px;
+  
+  
+  &::before{
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + -1px);
+    left: calc(50% + -70px);
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/ellipse.svg");
+    background-size: 4px;
+    background-repeat: no-repeat;
+  }
+
+  &::after{
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + -1px);
+    left: calc(50% + 60px);
+    width: 14px;
+    height: 13px;
+    background-image: url("../images/ellipse.svg");
+    background-size: 4px;
+    background-repeat: no-repeat;
+  }
+ 
+}
+
+
+.header-top__tel{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  
+  &:hover{
+    color: #FFBD54;
+  }
+  
+  &:active{
+    color:#333333;
+    opacity: 0.6;
+  }
+}
+
+.header-top__sublist{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  &::before{
+    
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top:3px;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    background-image: url("../images/calendar.svg");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    
+  }
+}
+
+.header-top__subitem + .header-top__subitem{
+  margin-left: 17px;
+}
+
+.header-top__time{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.header-bottom{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 153px;
+  padding: 20px 0;
+  background-color: #fff;
+}
+
+.logo{
+  position: absolute;
+  z-index: 2;
+  top: calc(50% + -50px);
+  left: calc(50% + -700px);
+  width: 177px;
+  height: 86px;
+  
+  &:hover{
+    opacity: 0.8;
+  }
+  
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+.navbar{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-left: auto;
+  margin-right: 195px;
+  
+  &::before{
+    
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../../images/fish.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.navbar__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__item ~ .navbar__item{
+  margin-left: 55px;
+}
+
+.navbar__link{
+  // display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-bottom: 4px solid transparent;
+  color: #333333;
+  text-decoration: none;
+  
+  &:hover{
+    border-color: #F4FFAD;;
+  }
+  
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+
+
+.header-bottom__question-link{
+  position: relative;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  border-bottom: 4px solid transparent;
+  color: #333333;
+  text-decoration: none;
+  
+  &::before{
+    
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: 2px;
+    left: -30px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/pet.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  &:hover{
+    border-color: #F4FFAD;;
+  }
+  
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+

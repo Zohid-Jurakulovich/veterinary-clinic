@@ -1,0 +1,94 @@
+.thoughts{
+  margin-bottom: 191px;
+}
+
+.thoughts__description{
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 753px;
+  margin-bottom: 35px;
+
+
+  &::before{
+
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + -70px);
+    right: calc(50% + 330px);
+    width: 145px;
+    height: 42px;
+    background-image: url("../images/digits-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  &::after{
+
+    content:"";
+    position: absolute;
+    z-index: 2;
+    bottom: calc(50% + -35px);
+    right: calc(50% + -580px);
+    width: 145px;
+    height: 42px;
+    background-image: url("../images/digits-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  
+}
+
+.thoughts__text{
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding-top: 43px ;
+  padding-bottom: 35px;
+  font-weight: normal;
+  font-size: 20px;
+  // border: 1px  solid black;
+  line-height: 26px;
+  text-align: center;
+  color: #949494;
+
+  &::before{
+
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + -79px);
+    right: calc(50% + -39px);
+    width: 140px;
+    height: 1px;
+    background-image: url("../images/Line.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::after{
+
+    content:"";
+    position: absolute;
+    z-index: 2;
+    top: calc(50% + +78px);
+    right: calc(50% + -39px);
+    width: 140px;
+    height: 1px;
+    background-image: url("../images/Line.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.thoughts__span{
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333333;
+  
+  text-align: center;
+}
